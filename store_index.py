@@ -15,14 +15,14 @@ PINECONE_API_KEY=os.environ.get('PINECONE_API_KEY')
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 
 
-extracted_data=load_pdf_file(data='research/Data/')
+extracted_data=load_pdf_file('research/Data/')
 text_chunks=text_split(extracted_data)
 embeddings = download_hugging_face_embeddings()
 
 
 pc = Pinecone(api_key=PINECONE_API_KEY)
 
-index_name = "medicalbot"
+index_name = "cts"
 
 
 pc.create_index(

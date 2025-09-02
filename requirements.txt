@@ -9,3 +9,10 @@ langchain_community
 langchain_openai
 langchain_experimental
 -e .
+Flask
+python-dotenv
+langchain
+pinecone-client
+langchain-pinecone
+sentence-transformers
+PyPDF2
